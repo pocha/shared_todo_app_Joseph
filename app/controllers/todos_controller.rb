@@ -4,8 +4,9 @@ class TodosController < ApplicationController
   end
   
   def delete
-    t = Todo.last
-    t.delete
+    # t = Todo.last
+    #   t.delete
+    redirect_to :index_path
   end
   
 end
